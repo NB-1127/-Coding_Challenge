@@ -9,14 +9,28 @@ public class Leap_Year {
         System.out.println("Enter a year");
         int n= sc.nextInt();
 
-        if(n % 4 ==0){
+        if(n % 4 !=0){
 
             System.out.println("Not a Leap Year");
 
-        }else{
+        }else if(n % 100 == 0 && n%400!=0){
 
+            System.out.println("Not Leap Year");
+        }else{
             System.out.println("Leap Year");
         }
+        // other way
+        /*if(n % 4==0){
+            sysout("no")
+        }else if(n % 100 ==0){
+                Sysout("yes")
+            }else if(n % 400==0){
+                    Sysout("no")
+                }else{
+                    Sysout("yes")
+                }
+            }
+        } */
     }
     
 }
