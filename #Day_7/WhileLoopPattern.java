@@ -50,9 +50,11 @@ public class WhileLoopPattern {
             }
             //prepare for next line
             System.out.println();
-            currentNum_lines++;
+           
             spaces--;
             stars++;
+           
+            currentNum_lines++;
         }
 
 
