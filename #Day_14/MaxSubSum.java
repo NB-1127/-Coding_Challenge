@@ -1,6 +1,6 @@
 public class MaxSubSum {
 
-    // time complexity is O(n^3)
+    // time complexity is O(n^2)
         public static void sumMaxSubArray(int arr[]){
             int max_SubArray= Integer.MIN_VALUE;
             int prefix[]= new int[arr.length];
