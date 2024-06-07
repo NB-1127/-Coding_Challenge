@@ -1,6 +1,7 @@
 public class MaxSubArray {
 
 // time complexity is O(n^3)
+//this is Brute force approch 
     public static void sumMaxSubArray(int arr[]){
         int max_SubArray= Integer.MIN_VALUE;
 
