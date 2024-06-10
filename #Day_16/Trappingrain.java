@@ -4,7 +4,7 @@ public class Trappingrain {
 
     public static int trapWater(int height[]){
 
-int n=height.length;
+        int n=height.length;
 
         int left_max[]=new int[height.length];
         left_max[0]=height[0];
@@ -25,7 +25,7 @@ int n=height.length;
         for (int i = 0; i < n; i++) {
 
             int waterlevel=Math.min(left_max[i], right_max[i]);
-            trapping=waterlevel-height[i];
+            trapping+=waterlevel-height[i];
         }
         return trapping;
     }

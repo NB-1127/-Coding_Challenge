@@ -17,10 +17,9 @@ public class BubbleSortCountSwap {
                     arr[j+1]=temp;
 
                     swap++;
-                }  
-                
-            }
-            if (swap==0) {
+                }                  
+    }
+           if (swap==0) {
                 System.out.println("Sortated Array");
                 
             }else{
@@ -40,6 +39,7 @@ public class BubbleSortCountSwap {
         int arr[]={1,2,3,4,5};
         bubbleSort(arr);
         printArr(arr);
-;    }
+
+    }
     
 }
