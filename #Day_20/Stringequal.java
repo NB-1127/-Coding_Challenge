@@ -4,8 +4,8 @@ public class Stringequal {
         String str="hello";
         String s= "hello";// there is reference variable are pointing the same instance
 
-        String s1= new String(); // new is allocate separate memory allocation
-        String s2= new String();
+        String s1= new String("hello"); // new is allocate separate memory allocation
+        String s2= new String("hello");
 
         if (s1 == s2) {
             System.out.println("String is equal ");

@@ -9,7 +9,7 @@ public class Time_Converter {
         int minute= sc.nextInt();
         hour +=5;
         minute +=30;
-        // GMT --> IST
+        // GMT --> IST : Greenwich Mean Time and Indian Standard Time
         if(minute >=60){
             hour++;
             minute -=60;
