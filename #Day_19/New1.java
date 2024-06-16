@@ -16,8 +16,8 @@ public class New1 {
 
                 int[] sub=Arrays.copyOfRange(arr,i,i+k+1);
 
-                int mi=Arrays.stream(sub).max().getAsInt();
-                ans=Math.min(ans, mi);
+                int mx=Arrays.stream(sub).max().getAsInt();
+                ans=Math.min(ans, mx);
             }
          }
          System.out.println("Elements : " + ans);
