@@ -1,4 +1,4 @@
-public class MeargeSort {
+public class MergeSort {
 
     //Complexity of merge sort is : O(nlogn)
     //Space Complexity is: O(n)
