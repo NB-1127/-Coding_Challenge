@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Demo {
+public class BeautifulArrayList {
 
     
     public static void main(String[] args) {
