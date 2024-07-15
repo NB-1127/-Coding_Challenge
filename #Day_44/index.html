@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Event Management</title>
+    <style>
+        /* Optional CSS for basic styling */
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        button {
+            margin-top: 10px;
+        }
+        #noEventsMsg {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #result {
+            display: none; /* Initially hide the result section */
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="center">Event Management</h2>
+        <form id="eventForm">
+            <label for="name">Event Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <br>
+            <label for="price">Cost/day:</label>
+            <input type="number" id="price" min="0">
+            <br>
+            <label for="count">Number of Days Needed:</label>
+            <input type="number" id="count" min="1">
+            <br>
+            <button type="button" id="addEvent">Add Event</button>
+        </form>
+
+        <div id="result">
+            <h3>Event List</h3>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Venue</th>
+                        <th>Date</th>
+                        <th>Total Cost</th>
+                        <th>Cancel Event</th>
+                    </tr>
+                </thead>
+                <tbody id="eventList">
+                    <!-- Events will be dynamically added here -->
+                </tbody>
+            </table>
+            <h3 id="noEventsMsg">No Events available</h3>
+        </div>
+    </div>
+</body>
+</html>
