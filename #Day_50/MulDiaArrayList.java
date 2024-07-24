@@ -4,18 +4,21 @@ public class MulDiaArrayList {
     
 
     public static void main(String[] args) {
-        ArrayList<ArrayList<Integer>> mainlist= new ArrayList<>();
-        ArrayList<Integer> list1 = new ArrayList<>();
+
+        // Multidimetional Arraylist Syntax
+        ArrayList<ArrayList<Integer>> mainlist= new ArrayList<>(); // multidimentional arraylist
+
+        ArrayList<Integer> list1 = new ArrayList<>(); //first
 
        
         mainlist.add(list1);
 
-        ArrayList<Integer> list2= new ArrayList<>();
+        ArrayList<Integer> list2= new ArrayList<>(); // Second
 
         
         mainlist.add(list2);
 
-        ArrayList<Integer> list3= new ArrayList<>();
+        ArrayList<Integer> list3= new ArrayList<>(); // Third
 
         
         mainlist.add(list3);
