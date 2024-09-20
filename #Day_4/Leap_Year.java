@@ -2,21 +2,26 @@ import java.util.Scanner;
 // Write a prg to print Leap Year or not
 public class Leap_Year {
 
-    public static boolean isLeap(int n){
+    public static void isLeap(int n,int num){
+
+        for (int i = 0; i < num; i++) {
+            
+        
         if(n % 4 !=0){
            
-            return false;
-            // System.out.println("Not a Leap Year");
+            // return false;
+            System.out.println("Not a Leap Year");
 
         }else if(n % 100 == 0 && n%400!=0){
 
-            return false;
+            // return false;
 
-            // System.out.println("Not Leap Year");
+            System.out.println("Not Leap Year");
         }else{
-            // System.out.println("Leap Year");
-            return true;
+            System.out.println("Leap Year"+n);
+            // return true;
         }
+    }
         
     }
     public static void main(String[] args) {
@@ -24,8 +29,8 @@ public class Leap_Year {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a year");
         int n= sc.nextInt();
-
-        System.out.println(isLeap(n));
+        int num=sc.nextInt();
+        isLeap(n,num);
         
     
     }
