@@ -8,7 +8,7 @@ public class LeapYear {
 
 
         while (count < num) {
-            if ((year != 100 && year % 4 !=0)||(year % 4==0)) {
+            if ((year != 100 && year % 4 ==0)||(year % 400 ==0)) {
                 System.out.println(year);
                 count++;
             }
