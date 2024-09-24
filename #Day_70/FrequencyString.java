@@ -16,10 +16,10 @@ public class FrequencyString {
         }
         System.out.println("Character Frequency:");
         for (int i = 0; i < freq.length; i++) {
-            if (freq[i] == 1) { // if we want all the charcter frq count
+            if (freq[i] > 0) { // if we want all the charcter frq count
 
                 //if(freq[i] > 0)
-                System.out.println((char) (i + 'a') + ": " + freq[i]);
+                System.out.print((char) (i + 'a') + "" + freq[i]);
             }
         }
     }
