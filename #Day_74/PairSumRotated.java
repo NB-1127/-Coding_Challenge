@@ -20,7 +20,7 @@ public class PairSumRotated {
             }
 
             if ((list.get(lp)+ list.get(rp)) < target) {
-                lp= (lp+1) % n;
+                lp= (lp+1) % n; // module
             }else {
 
                 rp= (n+rp-1)% n;
