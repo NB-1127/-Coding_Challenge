@@ -10,7 +10,7 @@ public class MergeSort {
         int mid= si + (ei-si)/2;
 
         mergeSort(arr, si, mid); // Left
-        mergeSort(arr, mid+1, ei);
+        mergeSort(arr, mid+1, ei); // right
         merge(arr, si, mid, ei);
     }
     public static void merge(int arr[], int si, int mid, int ei){
