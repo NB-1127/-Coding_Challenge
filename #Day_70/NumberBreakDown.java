@@ -24,7 +24,7 @@ public class NumberBreakDown {
         if (currentChar != '0') {
             //This checks if the current character is non-zero. If it's a zero, it is ignored, as zeros don't contribute to the breakdown.
             if (!result.isEmpty()) {
-                result+= " + ";
+                result += " + ";
             //If the result string is not empty, it appends " + " to separate components. This ensures correct formatting between the terms.
             }
             result += currentChar; //The current non-zero digit is appended to the result.
