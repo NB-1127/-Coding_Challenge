@@ -53,6 +53,7 @@ public class DoublyLL {
         }
         int val= head.data;
         head=head.next;
+        head.prve= null;
         size--;
         return val;
     }
@@ -86,16 +87,36 @@ public class DoublyLL {
         System.out.println("null");
     }
    
+    public static void reveseDll(){
+        Node curr= head;
+        Node prve= null;
+        Node next;
+
+        while (curr != null) {
+            next= curr.next;
+            curr.next= prve;
+            curr.prve= next;// this line for doubly linked list
+            prve= curr;
+            curr= next;
+        }
+        head = prve;
+    }
 
     public static void main(String[] args) {
         DoublyLL dll= new DoublyLL();
 
         dll.addLast(1);
         dll.addLast(2);
+        dll.addLast(3);
+        dll.addLast(4);
+        dll.addLast(5);
         dll.print();
 
         // dll.removeFirst();
-        dll.removeLast();
+        dll.removeFirst();
+        dll.print();
+
+        dll.reveseDll();
         dll.print();
     }
     

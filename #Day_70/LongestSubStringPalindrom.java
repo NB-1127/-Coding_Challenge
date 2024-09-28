@@ -20,7 +20,7 @@ public class LongestSubStringPalindrom {
         if (s == null && s.length() < 1) {
             return "";
         }
-        String logest="";
+        String logest=""; // some time it not work to use lonhest=s.subString(0 , 1);
 
         for (int i = 0; i < s.length(); i++) {
 

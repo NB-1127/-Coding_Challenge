@@ -45,7 +45,7 @@ public class FindRemoveNthNodeLinkedList {
 
         if (n == sz) {
             head= head.next;
-            return;
+            return ;
         }
         // sz-n
         int i=1;
@@ -65,7 +65,7 @@ public class FindRemoveNthNodeLinkedList {
         ll.addLast(4);
         ll.addLast(5);
         ll.print();
-        ll.findandRemoveNthIndex(3);
+        ll.findandRemoveNthIndex(2);
         ll.print();
     }
     
