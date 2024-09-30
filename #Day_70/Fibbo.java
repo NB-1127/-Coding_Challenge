@@ -23,15 +23,15 @@ public class Fibbo {
 
         while (a <= n) {
 
-            if (a==n) { // check the number is present in fibbo series up to given value 
-                isInSeries=true;
-                break;
-            }
-
             int next= a+b; // calculate the next series
             a=b;
             b= next;
 
+            if (a==n) { // check the number is present in fibbo series up to given value 
+                isInSeries=true;
+                break;
+            }
+            
             //Sum od even number
             if (a % 2 ==0) {
                 sumEven +=a;

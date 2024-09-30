@@ -26,7 +26,7 @@ public class NOnReapitingChar {
 
             
         }
-        return 'E';
+        return ' ';
     }
 
     public static void main(String[] args) {
