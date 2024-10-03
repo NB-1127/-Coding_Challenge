@@ -10,7 +10,7 @@ public class Solution5 {
         int[] tempArray = new int[k];
         
         for (int i = 0; i < k; i++) {
-            tempArray[i] = queue.poll(); 
+            tempArray[i] = queue.poll(); // remove
         }
 
         

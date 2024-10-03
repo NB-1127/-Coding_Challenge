@@ -23,8 +23,7 @@ Input: 20 output: 10
 
 1)find minimum angle between hour and minute hand. +
 2)sort a binary array using one traversal and no extra space 
-3)2 given sum and we have to print all the subsequences in array with given sum 
-4)2 sort array of 0s and 1s in only one loop solution was using two pointers
+3)2 given sum and we have to print all the subsequences in array with given sum --
 5) Occurance of characters in string +
 6)Find the minimum number of coins to make a given value. (Coin Change) +
 7)Longest substring pallandrome in a string +

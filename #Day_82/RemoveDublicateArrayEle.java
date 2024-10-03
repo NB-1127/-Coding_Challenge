@@ -24,6 +24,7 @@ public class RemoveDublicateArrayEle {
             }
 
         }
+        // to converting the list to array 
         int[] result= new int[list.size()];
             for(int i=0; i< list.size(); i++){
                 result[i]= list.get(i);
